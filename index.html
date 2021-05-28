@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HouseVopAdaptive</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav__content">
+            <img src="./assets/images/logo.png" alt="logo">
+
+            <ul>
+                <li>О комплексе</li>
+                <li>Район</li>
+                <li>Каталог квартир</li>
+                <li>Ипотека</li>
+                <li>Контакты</li>
+            </ul>
+
+            <img id="burger-menu" src="./assets/icons/menu.svg" alt="burger-menu">
+
+        </div>
+    </nav>
+
+    <div id="nav-menu">
+        <ul>
+            <li>О комплексе</li>
+            <li>Район</li>
+            <li>Каталог квартир</li>
+            <li>Ипотека</li>
+            <li>Контакты</li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <h1>
+            Жилой комплекс
+            в историческом центре
+        </h1>
+
+        <img class="hero__mouse_icon" src="./assets/icons/MouseIcon.png" alt="mouse-icon">
+
+        <div class="hero__info">
+            <div>
+                <img src="./assets/icons/MapIcon.png" alt="map-icon">
+                <p>
+                    Наб. реки Фонтанки 10-15
+                </p>
+            </div>
+
+            <div>
+                <img src="./assets/icons/PhoneIcon.png" alt="phone-icon">
+                <p>8 (812) 123-45-67</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="features">
+            <div class="features__item">
+                <img src="./assets/icons/ParkIcon.png" alt="park-icon">
+                <p>Рядом исторические парки и скверы</p>
+            </div>
+
+            <div class="features__item">
+                <img src="./assets/icons/BuildingIcon.png" alt="building-icon">
+                <p>Полностью обустроенный</p>
+            </div>
+
+            <div class="features__item">
+                <img src="./assets/icons/FountainIcon.png" alt="fountain-icon">
+                <p>10 фонтанов на территории</p>
+            </div>
+
+            <div class="features__item">
+                <img src="./assets/icons/BicycleIcon.png" alt="bicycle-icon">
+                <p>6 км велодорожек</p>
+            </div>
+        </div>
+
+        <div class="appartments_haupt">
+            <h2>Наши квартиры</h2>
+
+            <div class="appartments">
+
+                <div>
+                    <img src="./assets/images/AppartmentImg1.png" alt="appt-img1">
+                    <p>Лофт — 3 этажа</p>
+                </div>
+
+                <div>
+                    <img src="./assets/images/AppartmentImg2.png" alt="appt-img2">
+                    <p>Лофт — 2 этажа</p>
+                </div>
+
+                <div>
+                    <img src="./assets/images/AppartmentImg3.png" alt="appt-img3">
+                    <p>Лофт — 3 этажа</p>
+                </div>
+
+                <div>
+                    <img src="./assets/images/ApartmentImg4.png" alt="appt-img-4">
+                    <p>Лофт — 2 этажа</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>Хотите посмотреть?</h3>
+            <div class="footer-block">
+                <div class="footer-block__left">
+                    <span>
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum
+                        является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                        безымянный печатник
+                        создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                        образцов.
+                    </span>
+                </div>
+
+                <div class="footer-block__right">
+                    <div class="right__first">
+                        <div>
+                            <input placeholder="Ваше Имя" type="text">
+                        </div>
+                        <div>
+                            <input placeholder="Ваш Телефон" type="tel">
+                        </div>
+                    </div>
+                    <div class="right__second">
+                        <div>
+                            <span>
+                                *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу
+                            </span>
+                        </div>
+                        <div>
+                            <button>Посмотреть Район</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let menuClicked = false;
+        const burger_menu = document.getElementById('burger-menu');
+
+        const nav_menu = document.getElementById('nav-menu');
+
+        burger_menu.addEventListener('click', () => {
+            if (menuClicked) {
+                nav_menu.style.marginRight = '-170px';
+                nav_menu.style.display = 'none';
+            } else {
+                nav_menu.style.marginRight = 0;
+                nav_menu.style.display = 'block';
+            }
+            menuClicked = !menuClicked;
+        })
+    </script>
+
+</body>
+
+</html>
